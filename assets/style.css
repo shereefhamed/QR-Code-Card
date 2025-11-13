@@ -1,40 +1,46 @@
-body{
+:root {
+    --slate-300-color: #D5E1EF;
+    --slate-500-color: #68778D;
+    --slate-900-color: #1F314F;
+}
+
+body {
     padding: 0;
     margin: 0;
     height: 100vh;
-    background-color: #D5E1EF;
+    background-color: var(--slate-300-color);
     font-family: "Outfit", sans-serif;
 }
 
-main{
+main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: calc(100% - 1rem);
 }
 
-.qr-code-container{
+.qr-code-container {
     background-color: white;
-    padding: 16px 16px 40px 16px;
+    padding: 1rem 1rem 2.5rem 1rem;
     border-radius: 16px;
-    width: 300px;
+    width: 19rem;
     text-align: center;
-    box-shadow: 5px 5px 5px #888888;
+    box-shadow: 5px 5px 10px #888888;
 }
 
-.qr-code-image-container img{
+.qr-code-image-container img {
     width: 100%;
     border-radius: 16px;
 }
 
-.qr-code-title h1{
-    color: #1F314F;
-    font-size: 24px;
+.qr-code-title h1 {
+    color: var(--slate-900-color);
+    font-size: 1.5rem;
     font-weight: 700;
 }
 
-.qr-code-description p{
-    font-size: 15px;
+.qr-code-description p {
+    font-size: 1rem;
     font-weight: 400;
-    color: #68778D;
+    color: var(--slate-500-color);
 }
